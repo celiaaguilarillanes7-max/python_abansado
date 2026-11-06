@@ -150,4 +150,8 @@ retornara un dato entero <int> positivo
 """
 return a-b
 ```
-> [!WARNING] en el proceso de documentacion tener encuenta de incluir a lo menos lo siguiente: 1. breve explicacion sobre que hace la funcion. 2. especificaciones  y caracteristicas de los parametros incluyendo sus tipos. 3. restricciones de la funcion. 4.el valor que retorna y sus caracteristicas
+> [!WARNING] en el proceso de documentacion tener encuenta de incluir a lo menos lo siguiente: 
+> 1. breve explicacion sobre que hace la funcion. 
+> 2. especificaciones  y caracteristicas de los parametros incluyendo sus tipos. 
+> 3. restricciones de la funcion. 
+> 4.el valor que retorna y sus caracteristicas
