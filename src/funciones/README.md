@@ -28,8 +28,8 @@ print(sumar(78,56))
 print(sumar(45,5))
  ```
  ## funciones avanzadas
- existes tres grandes conseptod para poder entender el uso abanzado de laqs funciones:
- 1. argumentos, parametrosposicionales y nominales, *args y +kargs.
+ existes tres grandes conseptos para poder entender el uso abanzado de las funciones:
+ 1. argumentos, parametros posicionales y nominales, *args y +kargs.
  2. anotaciones en la salida de una funcion.
  3. recurcividad.
 ```python
@@ -179,3 +179,13 @@ existen casos en los que necesitamos mas expresividad en la *anotacion de tipo* 
 - tuple|dict -> puede ser datos  de tipo tupla o diccionario.
 - list[srt|int] ->lista cuyos elementos pueden ser cadena de texto o enteros.
 - dict[srt|int,float|int] -> dicionario cuya clave puede ser cadena o entero cuyo valor puede ser flotante o entero.
+  
+  ## CLOSURE
+  una `closure` o `clausura` sn funciones que establecen un funcion intyerior , o retornan un funcion estas funciones se caracterisan por recordar el valor de los argumentos que se le pasa.
+
+```python
+def multiplicando(n):
+    def multiplicador(m):
+        return n*m
+    return multiplicador
+```
