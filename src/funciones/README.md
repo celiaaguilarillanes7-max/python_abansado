@@ -217,3 +217,57 @@ filter(lambda n:n % 2== 0,numeros)
 ```
 >[!WARNING]nota importante
 > tanto `map()`como `filter()` no devuelven listas directamente, si no iteradores. esto es para ahorrar memoria (evaluacion perezosa o lazy evaluacion). si quieres ver el resultado como una lista tradicional, siempre debes envolver en `list`.
+
+## comprension de lista
+List Comprehension es una forma más sencilla, rápida y ordenada de crear nuevas listas en Python utilizando una sola línea de código, en lugar de escribir muchas líneas con el ciclo FOR.
+
+1. List Comprehension básico: Permite crear una nueva lista realizando operaciones con los elementos de otra lista. Por ejemplo, elevar los números al cuadrado.
+```python
+numeros = [1, 2, 3, 4, 5]
+cuadrados = [x**2 for x in numeros]
+print(cuadrados)
+
+Resultado: "[1, 4, 9, 16, 25]"
+```
+2. List Comprehension con IF: Permite aplicar condiciones para seleccionar solamente los elementos que necesitamos. Por ejemplo, obtener los números pares utilizando el operador módulo (%).
+```python
+numeros = [1, 2, 3, 4, 5]
+pares = [x for x in numeros if x % 2 == 0]
+print(pares)
+
+Resultado: "[2, 4]"
+```
+3. List Comprehension anidado: Permite crear listas dentro de otras listas, como una matriz formada por filas y columnas. Para ello se utilizan dos ciclos FOR.
+
+Conclusión: List Comprehension es una herramienta muy útil en Python porque permite escribir menos código, realizar operaciones, aplicar condiciones y crear listas de una manera más fácil y compacta.
+
+Ejemplo:
+
+matriz = [[j for j in range(1, 4)] for i in range(3)]
+print(matriz)
+
+Resultado:
+```python
+[[1, 2, 3],
+ [1, 2, 3],
+ [1, 2, 3]]
+ ```
+ 
+ RESUMEN: DICCIONARIOS POR COMPRENSIÓN EN PYTHON
+
+Los diccionarios por comprensión permiten crear nuevos diccionarios de manera sencilla y rápida utilizando una sola línea de código. Se pueden crear elementos con una clave y un valor a partir de otros datos.
+
+1. Diccionario básico por comprensión
+
+Permite crear un diccionario a partir de una lista.
+
+Ejemplo:
+```python
+numeros = [1, 2, 3, 4, 5]
+cuadrados = {x: x**2 for x in numeros}
+print(cuadrados)
+
+Resultado:
+
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
