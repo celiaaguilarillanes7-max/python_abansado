@@ -20,3 +20,20 @@ numeros:list[int]=[2,3,5,8,7,4,6]
 pares=list(filter(lambda n:n%2==0,numeros))
 nueva_lista=list(map(lambda n:n*10,pares))
 print(f"los numeros pares multiplicado *10: {nueva_lista}")
+hum:list[int]=[2,3,4,6,7,9,11,12,15,17,18]
+
+#1. forma
+num:list[int]=[2,3,4,6,7,9,11,12,15,17,18]
+numeros_pares:list[int]=list(filter(lambda n:n%2==0,num))
+print(numeros_pares)
+por_diez:list[int]=list(map(lambda n:n*10,numeros_pares))
+print(por_diez)
+#2. forma
+num2:list[int]=[2,3,4,6,7,9,11,12,15,17,18]
+pares_por_diez:list[int]=list(map(lambda n:n*10,filter(lambda n:n%2==0,num)))
+print(pares_por_diez)
+#3. forma usando compresion de listas
+print([ n*10 for n in num if n%2==0])
+#refactorizacion: es una tecnica para mejor o hacer mas optimo el codigo
+
+# refactorizacion: es una tecnica para mejorar o hacer mas optimo el codigo
